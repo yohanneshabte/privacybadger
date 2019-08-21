@@ -724,12 +724,12 @@ function dispatcher(request, sender, sendResponse) {
 
   } else if (request.type == "activateOnSite") {
     badger.enablePrivacyBadgerForOrigin(request.tabHost);
-    badger.refreshIconAndContextMenu(request.tabId, request.tabUrl);
+    badger.updateIcon(request.tabId, request.tabUrl);
     sendResponse();
 
   } else if (request.type == "deactivateOnSite") {
     badger.disablePrivacyBadgerForOrigin(request.tabHost);
-    badger.refreshIconAndContextMenu(request.tabId, request.tabUrl);
+    badger.updateIcon(request.tabId, request.tabUrl);
     sendResponse();
 
   } else if (request.type == "revertDomainControl") {
