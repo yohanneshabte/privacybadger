@@ -131,9 +131,13 @@
         "message": "匯入",
         "description": ""
     },
+    "options_hide_social_widgets": {
+        "message": "不要取代下列的小工具：",
+        "description": "Multiple selection box on the widget replacement tab"
+    },
     "options_social_widgets_checkbox": {
-        "message": "替換社交網路小工具",
-        "description": "Checkbox label on the general settings page"
+        "message": "啟用小工具取代",
+        "description": "Checkbox label on the widget replacement tab"
     },
     "options_show_nontracking_domains_checkbox": {
         "message": "顯示似乎未在追蹤您的網域",
@@ -337,10 +341,6 @@
         "message": "允許",
         "description": "Dropdown control setting on the Tracking Domains options page tab."
     },
-    "share_button_title_google": {
-        "message": "在 Google+ 分享",
-        "description": "Text that comes up when you hover over the social sharing buttons on the intro page."
-    },
     "intro_donate_heading": {
         "message": "隱私是一場團隊比賽！",
         "description": "Part of the 'donate' section on the intro page."
@@ -374,7 +374,7 @@
         "description": ""
     },
     "popup_instructions": {
-        "message": "Privacy Badger 偵測到這個網站上有 $COUNT$ 個在此頁面上的潛在$TRACKER_LINK_START$追蹤器$TRACKER_LINK_END$。這些滑桿讓您可以控制 Privacy Badger 如何處理每個追蹤器。除非有某些東西壞掉了，否則您應該不需要調整這些滑桿。",
+        "message": "Privacy Badger 偵測到這個網站上有 $COUNT$ 個在此頁面上的潛在$TRACKER_LINK_START$追蹤器$TRACKER_LINK_END$。除非有某些東西壞掉了，否則您應該不需要調整這些滑桿。",
         "description": "Popup message that shows the number of trackers. This particular message is used when that number is greater than one.",
         "placeholders": {
             "count": {
@@ -399,7 +399,7 @@
         "description": ""
     },
     "options_domain_list_one_tracker": {
-        "message": "Privacy Badger 已偵測到了一個潛在<a target='_blank' tabindex=-1 title='i18n_what_is_a_tracker' class='tooltip' href='https://www.eff.org/privacybadger#faq-What-is-a-third-party-tracker?'>追蹤網域</a>。滑桿讓您可以控制 Privacy Badger 如何控制處理它。",
+        "message": "Privacy Badger 已偵測到了一個潛在<a target='_blank' tabindex=-1 title='i18n_what_is_a_tracker' class='tooltip' href='https://www.eff.org/privacybadger#faq-What-is-a-third-party-tracker?'>追蹤網域</a>。",
         "description": "Shown on the Tracking Domains options page tab when Privacy Badger learned of exactly one tracker so far."
     },
     "tooltip_allow": {
@@ -411,7 +411,7 @@
         "description": "Button in the popup."
     },
     "popup_instructions_one_tracker": {
-        "message": "Privacy Badger 在此頁面上偵測到了潛在的<a target='_blank' title='i18n_what_is_a_tracker' class='tooltip' href='https://www.eff.org/privacybadger#faq-What-is-a-third-party-tracker?'>追蹤器</a>。滑桿讓您可以控制 Privacy Badger 如何處理它。除非有某些東西壞掉了，否則您應該不需要調整這些滑桿。",
+        "message": "Privacy Badger 在此頁面上偵測到了潛在的<a target='_blank' title='i18n_what_is_a_tracker' class='tooltip' href='https://www.eff.org/privacybadger#faq-What-is-a-third-party-tracker?'>追蹤器</a>。除非有某些東西壞掉了，否則您應該不需要調整這些滑桿。",
         "description": "Text shown in the popup when there is exactly one tracker on the page."
     },
     "domain_slider_allow_tooltip": {
@@ -423,7 +423,7 @@
         "description": "Intro page paragraph."
     },
     "options_domain_list_trackers": {
-        "message": "目前為止，Privacy Badger 偵測到 $COUNT$ 個潛在$TRACKER_LINK_START$追蹤網域$TRACKER_LINK_END$。滑桿讓您可以控制 Privacy Badger 如何控制處理它。",
+        "message": "目前為止，Privacy Badger 偵測到 $COUNT$ 個潛在$TRACKER_LINK_START$追蹤網域$TRACKER_LINK_END$。",
         "description": "Message under the Tracking Domains tab on the options page. Shown after Privacy Badger learned about more than one tracker.",
         "placeholders": {
             "count": {
@@ -586,5 +586,21 @@
     "copy_button_copied": {
         "message": "已複製",
         "description": "On-click text of the copy button on the share overlay."
+    },
+    "popup_special_page_header": {
+        "message": "在此頁面上沒有事情可做",
+        "description": "Heading for popup_special_page_paragraph"
+    },
+    "popup_special_page_paragraph": {
+        "message": "Privacy Badger 在像這類的特殊頁面上無法運作。試著瀏覽其他的頁面看看。",
+        "description": "Shown in the popup for special browser pages such as the New Tab page and 'about:' pages."
+    },
+    "options_widget_replacement_tab": {
+        "message": "小工具取代",
+        "description": "Options page tab heading"
+    },
+    "options_widget_replacement_desc": {
+        "message": "當阻擋社群媒體按鈕與其他可能有用（影片、音訊、留言）的小工具時，Privacy Badger 可以使用點擊啟用的按鈕來取代它們。",
+        "description": "Introduction to the Widget Replacement tab on the options page."
     }
 }

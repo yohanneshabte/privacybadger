@@ -1,5 +1,5 @@
 {
-  "version": "2019.7.1.1",
+  "version": "2019.10.28",
   "author": {
     "email": "eff.software.projects@gmail.com"
   },
@@ -14,6 +14,7 @@
     "tabs",
     "http://*/*",
     "https://*/*",
+    "webNavigation",
     "webRequest",
     "webRequestBlocking",
     "storage",
@@ -23,7 +24,7 @@
   "background": {
     "scripts": [
       "js/bootstrap.js",
-      "lib/vendor/punycode.js",
+      "lib/vendor/punycode-1.4.1.js",
       "lib/publicSuffixList.js",
       "lib/basedomain.js",
       "lib/vendor/underscore-1.9.1.js",
@@ -519,8 +520,8 @@
   "name": "__MSG_name__",
   "browser_action": {
     "default_icon": {
-      "19": "icons/badger-19.png",
-      "38": "icons/badger-38.png"
+      "19": "icons/badger-19-disabled.png",
+      "38": "icons/badger-38-disabled.png"
     },
     "default_popup": "skin/popup.html",
     "default_title": "__MSG_name__"

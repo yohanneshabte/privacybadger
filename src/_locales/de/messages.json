@@ -131,9 +131,13 @@
         "message": "Importieren",
         "description": ""
     },
+    "options_hide_social_widgets": {
+        "message": "Folgende Widgets nicht ersetzen:",
+        "description": "Multiple selection box on the widget replacement tab"
+    },
     "options_social_widgets_checkbox": {
-        "message": "Social Widgets ersetzen",
-        "description": "Checkbox label on the general settings page"
+        "message": "Ersetzen von Widgets aktivieren",
+        "description": "Checkbox label on the widget replacement tab"
     },
     "options_show_nontracking_domains_checkbox": {
         "message": "Domains anzeigen, die Ihre Internetaktivitäten nicht zu verfolgen scheinen",
@@ -337,10 +341,6 @@
         "message": "erlaubt",
         "description": "Dropdown control setting on the Tracking Domains options page tab."
     },
-    "share_button_title_google": {
-        "message": "Auf Google+ teilen",
-        "description": "Text that comes up when you hover over the social sharing buttons on the intro page."
-    },
     "intro_donate_heading": {
         "message": "Datenschutz ist ein Teamsport!",
         "description": "Part of the 'donate' section on the intro page."
@@ -374,7 +374,7 @@
         "description": ""
     },
     "popup_instructions": {
-        "message": "Privacy Badger hat bisher $COUNT$ mögliche $TRACKER_LINK_START$Tracker$TRACKER_LINK_END$ auf dieser Webseite erkannt. Mit den Schiebereglern können Sie steuern, wie Privacy Badger die jeweiligen Tracker handhabt. Sofern keine Probleme bei der Darstellung dieser Seite auftreten, sollte eine Änderung der Schiebereglereinstellungen nicht notwendig sein.",
+        "message": "Privacy Badger hat bisher $COUNT$ mögliche $TRACKER_LINK_START$Tracker$TRACKER_LINK_END$ auf dieser Webseite erkannt. Sofern keine Probleme bei der Darstellung dieser Seite auftreten, sollte eine Änderung der Schiebereglereinstellungen nicht notwendig sein.",
         "description": "Popup message that shows the number of trackers. This particular message is used when that number is greater than one.",
         "placeholders": {
             "count": {
@@ -399,7 +399,7 @@
         "description": ""
     },
     "options_domain_list_one_tracker": {
-        "message": "Privacy Badger hat bisher eine mögliche <a target='_blank' tabindex=-1 title='i18n_what_is_a_tracker' class='tooltip' href='https://www.eff.org/privacybadger#faq-What-is-a-third-party-tracker?'>Tracking-Domain</a> erkannt. Der Schieberegler lässt Sie steuern, wie Privacy Badger diese handhabt.",
+        "message": "Privacy Badger hat bisher eine mögliche <a target='_blank' tabindex=-1 title='i18n_what_is_a_tracker' class='tooltip' href='https://www.eff.org/privacybadger#faq-What-is-a-third-party-tracker?'>Tracking-Domain</a> erkannt.",
         "description": "Shown on the Tracking Domains options page tab when Privacy Badger learned of exactly one tracker so far."
     },
     "tooltip_allow": {
@@ -411,7 +411,7 @@
         "description": "Button in the popup."
     },
     "popup_instructions_one_tracker": {
-        "message": "Privacy Badger hat einen möglichen <a target='_blank' title='i18n_what_is_a_tracker' class='tooltip' href='https://www.eff.org/privacybadger#faq-What-is-a-third-party-tracker?'>Tracker</a> auf dieser Webseite erkannt. Mit dem Schieberegler können Sie steuern, wie Privacy Badger ihn handhabt. Sofern keine Probleme bei der Darstellung dieser Seite auftreten, sollte eine Änderung der Schiebereglereinstellungen nicht notwendig sein.",
+        "message": "Privacy Badger hat einen möglichen <a target='_blank' title='i18n_what_is_a_tracker' class='tooltip' href='https://www.eff.org/privacybadger#faq-What-is-a-third-party-tracker?'>Tracker</a> auf dieser Webseite erkannt. Sofern keine Probleme bei der Darstellung dieser Seite auftreten, sollte eine Änderung der Schiebereglereinstellungen nicht notwendig sein.",
         "description": "Text shown in the popup when there is exactly one tracker on the page."
     },
     "domain_slider_allow_tooltip": {
@@ -423,7 +423,7 @@
         "description": "Intro page paragraph."
     },
     "options_domain_list_trackers": {
-        "message": "Privacy Badger hat bisher $COUNT$ mögliche $TRACKER_LINK_START$Tracking-Domains$TRACKER_LINK_END$ erkannt. Mit den Schiebereglern können Sie steuern, wie Privacy Badger die jeweiligen Tracker handhabt.",
+        "message": "Privacy Badger hat bisher $COUNT$ mögliche $TRACKER_LINK_START$Tracking-Domains$TRACKER_LINK_END$ erkannt.",
         "description": "Message under the Tracking Domains tab on the options page. Shown after Privacy Badger learned about more than one tracker.",
         "placeholders": {
             "count": {
@@ -586,5 +586,21 @@
     "copy_button_copied": {
         "message": "Kopiert",
         "description": "On-click text of the copy button on the share overlay."
+    },
+    "popup_special_page_header": {
+        "message": "Nichts zu tun auf dieser Seite",
+        "description": "Heading for popup_special_page_paragraph"
+    },
+    "popup_special_page_paragraph": {
+        "message": "Auf besonderen Seiten wie dieser funktioniert Privacy Badger nicht. Versuchen Sie eine andere.",
+        "description": "Shown in the popup for special browser pages such as the New Tab page and 'about:' pages."
+    },
+    "options_widget_replacement_tab": {
+        "message": "Ersetzen von Widgets",
+        "description": "Options page tab heading"
+    },
+    "options_widget_replacement_desc": {
+        "message": "Beim Blocken von sozialen Schaltflächen und anderen potentiell nützlichen (Video-, Audio-, Kommentar-)Widgets kann Privacy Badger diese mit Platzhaltern ersetzen, die durch Anklicken aktivierbar sind.",
+        "description": "Introduction to the Widget Replacement tab on the options page."
     }
 }

@@ -11,13 +11,13 @@ auth.adobe.com
 wwwimages.adobe.com
 xsdownload.adobe.com
 assets.adobedtm.com
+affirm.com
 akamai.net
 akamaihd.net
 akamaized.net
 al.com
 alert60.com
 alexa.com
-alicdn.com
 ally.com
 amazon.com
 s3.amazonaws.com
@@ -43,6 +43,7 @@ hiroservers.appspot.com
 snapabug.appspot.com
 appspot.com
 arcgis.com
+arcgisonline.com
 archive.org
 secure5.arcot.com
 arcot.com
@@ -65,10 +66,13 @@ bankrate.com
 bazaarvoice.com
 bcbits.com
 betterttv.net
+static.beyondmenu.com
+www.beyondmenu.com
 bigcommerce.com
 www.bing.com
 bit.ly
 bizrate.com
+blockstack.org
 blogblog.com
 blogger.com
 blogher.org
@@ -121,7 +125,6 @@ cdn.cnetcontent.com
 ws.cnetcontent.com
 com.com
 complex.com
-consensu.org
 convio.net
 copyscape.com
 corporate-ir.net
@@ -142,7 +145,6 @@ delvenetworks.com
 denverpost.com
 deviantart.com
 deviantart.net
-digg.com
 cdn.discourse.org
 discovery.com
 disqus.com
@@ -152,6 +154,7 @@ uploads.disquscdn.com
 dmcdn.net
 dmcdn.com
 screendoor.dobt.co
+documentcloud.org
 domainnamesales.com
 donorbox.org
 dotsub.com
@@ -159,6 +162,13 @@ dl.dropboxusercontent.com
 dudamobile.com
 dumpert.nl
 duosecurity.com
+cdn.dynamicyield.com
+cdn-eu.dynamicyield.com
+rcom.dynamicyield.com
+rcom-eu.dynamicyield.com
+static.dynamicyield.com
+st.dynamicyield.com
+st-eu.dynamicyield.com
 ebay.com
 ebayimg.com
 ebayrtm.com
@@ -169,6 +179,7 @@ edgefcs.net
 edgekey.net
 editmysite.com
 files.edx.org
+ehc.com
 elasticbeanstalk.com
 eltrafiko.com
 api-cdn.embed.ly
@@ -184,6 +195,7 @@ et4.de
 ethn.io
 evcdn.com
 ebmedia.eventbrite.com
+everyaction.com
 s-static.ak.facebook.com
 staticxx.facebook.com
 www.facebook.com
@@ -231,6 +243,7 @@ getpocket.com
 giant.gfycat.com
 gfycat.com
 ggpht.com
+gigya.com
 giphy.com
 github.com
 githubusercontent.com
@@ -253,6 +266,7 @@ docs.google.com
 drive.google.com
 feedburner.google.com
 feedproxy.google.com
+fonts.google.com
 fusiontables.google.com
 groups.google.com
 kh.google.com
@@ -305,6 +319,7 @@ hellobar.com
 herokuapp.com
 code.highcharts.com
 homestead.com
+cdn.hometogo.net
 honcode.ch
 hootsuite.com
 howaboutwe.com
@@ -333,6 +348,7 @@ imgix.net
 imshopping.com
 indeed.com
 inergizedigital.com
+inq.com
 instagram.com
 instantservice.com
 instapaper.com
@@ -353,6 +369,7 @@ justin.tv
 jwpcdn.com
 jwpltx.com
 content.jwplatform.com
+jwpsrv.com
 cdnapi.kaltura.com
 cdnapisec.kaltura.com
 cdnbakmi.kaltura.com
@@ -385,6 +402,7 @@ onedrive.live.com
 livechatinc.com
 livefyre.com
 livehelpnow.net
+liveperson.net
 livestream.com
 llnwd.net
 loggly.com
@@ -405,6 +423,7 @@ microsoft.com
 microsoftonline.com
 microsofttranslator.com
 mlive.com
+mncdn.com
 mobify.com
 verify.monzo.com
 loop.services.mozilla.com
@@ -439,6 +458,7 @@ assets.nflxext.com
 cdn3.nflxext.com
 nflxext.com
 ngfiles.com
+ngpvan.com
 nj.com
 nmcdn.us
 nola.com
@@ -542,12 +562,14 @@ schibsted.no
 schibsted.tech
 scribd.com
 scribdassets.com
+www.searchanise.com
 securesuite.co.uk
 securitymetrics.com
 seeclickfix.com
 sgizmo.com
 shopify.com
 shopping.com
+shop-pro.jp
 shoprunner.com
 sidearmsports.com
 siteimprove.com
@@ -562,7 +584,7 @@ snapengage.com
 sndcdn.com
 auth.api.sonyentertainmentnetwork.com
 cdn-a.sonyentertainmentnetwork.com
-soundcloud.com
+api.soundcloud.com
 springboardplatform.com
 squarespace.com
 squareup.com
@@ -632,6 +654,7 @@ typography.com
 assets.ubuntu.com
 uicdn.com
 ui-portal.de
+ultimedia.com
 ultraimg.com
 unicornmedia.com
 uplynk.com
@@ -667,6 +690,7 @@ wikimedia.org
 wikipedia.org
 wildapricot.org
 windows.net
+windy.com
 wishabi.com
 wistia.net
 wistia.com
@@ -689,14 +713,14 @@ pipes.yahoo.com
 search.yahoo.com
 yahoo.net
 yahooapis.com
-yandex.net
-yandex.ru
-yandex.ua
+api-maps.yandex.ru
+img-fotki.yandex.ru
 yardbarker.com
 yellowpages.com
 seatme.yelp.com
 yelpcdn.com
 yimg.com
+yottaa.net
 youku.com
 youtube.com
 youtube-nocookie.com
@@ -706,9 +730,12 @@ zap2it.com
 zdassets.com
 zencdn.net
 zendesk.com
-zergnet.com
 ziplist.com
 zlcdn.com
+zoho.com
+zoho.eu
+zohopublic.com
+zohostatic.com
 zombaio.com
 zope.net
 zopim.com

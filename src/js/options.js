@@ -146,6 +146,30 @@ function loadOptions() {
     })
     .prop("checked", OPTIONS_DATA.showNonTrackingDomains);
 
+  const widgetSelector = $("#hide-widgets-select");
+  widgetSelector.prop("disabled",
+    OPTIONS_DATA.isWidgetReplacementEnabled ? false : "disabled");
+
+  $("#replace-widgets-checkbox").change(function () {
+    if ($(this).is(":checked")) {
+      widgetSelector.prop("disabled", false);
+    } else {
+      widgetSelector.prop("disabled", "disabled");
+    }
+  });
+
+  // Initialize Select2 and populate options
+  widgetSelector.select2();
+  OPTIONS_DATA.widgets.forEach(function (key) {
+    const isSelected = OPTIONS_DATA.widgetReplacementExceptions.includes(key);
+    const option = new Option(key, key, false, isSelected);
+    widgetSelector.append(option).trigger("change");
+  });
+
+  widgetSelector.on('select2:select', updateWidgetReplacementExceptions);
+  widgetSelector.on('select2:unselect', updateWidgetReplacementExceptions);
+  widgetSelector.on('select2:clear', updateWidgetReplacementExceptions);
+
   reloadWhitelist();
   reloadTrackingDomainsTab();
 
@@ -515,8 +539,10 @@ function reloadTrackingDomainsTab() {
   $("#options_domain_list_no_trackers").hide();
   $("#tracking-domains-div").show();
 
+  let baseDomains = new Set(allTrackingDomains.map(d => window.getBaseDomain(d)));
+
   // Update messages according to tracking domain count.
-  if (allTrackingDomains.length == 1) {
+  if (baseDomains.size == 1) {
     // leave out messages about multiple trackers
     $("#options_domain_list_trackers").hide();
 
@@ -525,7 +551,7 @@ function reloadTrackingDomainsTab() {
   } else {
     $("#options_domain_list_trackers").html(i18n.getMessage(
       "options_domain_list_trackers", [
-        allTrackingDomains.length,
+        baseDomains.size,
         "<a target='_blank' title='" + _.escape(i18n.getMessage("what_is_a_tracker")) + "' class='tooltip' href='https://www.eff.org/privacybadger/faq#What-is-a-third-party-tracker'>"
       ]
     )).show();
@@ -762,6 +788,18 @@ function removeOrigin(event) {
   }, (response) => {
     OPTIONS_DATA.origins = response.origins;
     reloadTrackingDomainsTab();
+  });
+}
+
+/**
+ * Update which widgets should be blocked instead of replaced
+ * @param {Event} event The DOM event triggered by selecting an option
+ */
+function updateWidgetReplacementExceptions() {
+  const widgetReplacementExceptions = $('#hide-widgets-select').select2('data').map(({ id }) => id);
+  chrome.runtime.sendMessage({
+    type: "updateSettings",
+    data: { widgetReplacementExceptions }
   });
 }
 
