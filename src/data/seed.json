@@ -2823,7 +2823,7 @@
     "api.soundcloud.com": {
       "dnt": false,
       "heuristicAction": "cookieblock",
-      "nextUpdateTime": 0,
+      "nextUpdateTime": 1574230794071,
       "userAction": ""
     },
     "api.stack-sonar.com": {
@@ -13700,8 +13700,8 @@
     },
     "soundcloud.com": {
       "dnt": false,
-      "heuristicAction": "block",
-      "nextUpdateTime": 0,
+      "heuristicAction": "cookieblock",
+      "nextUpdateTime": 1574230794071,
       "userAction": ""
     },
     "sourcepoint.mgr.consensu.org": {
@@ -16142,7 +16142,7 @@
     },
     "w.soundcloud.com": {
       "dnt": false,
-      "heuristicAction": "block",
+      "heuristicAction": "cookieblock",
       "nextUpdateTime": 1574096758342,
       "userAction": ""
     },
